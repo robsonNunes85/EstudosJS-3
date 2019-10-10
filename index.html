@@ -9,8 +9,21 @@
 <body>
 
 <script>
+// Escreva uma função que verifique se o vetor de habilidades passado possui a habilidade "Javascript"
+// e retorna um booleano true/false caso exista ou não.
 
+function temHabilidade(skills) {
 
+    var habilidadeBusca = skills.indexOf("Javascript"); //faz o array no vetor skills em busca da palavra
+    if(habilidadeBusca == -1){
+        return false;
+    } else {
+        return true;
+    }
+}
+var skills = ["Javascript", "ReactJS", "React Native"];
+temHabilidade(skills); // true ou false
+console.log(temHabilidade(skills));
 
 </script>    
 
